@@ -23,4 +23,4 @@ and linear stabilizator to 1.8v
 
 ##### Ni-MH-charger
 Ni-MH charger module based on CN3085 
-module constructed without temperature monitoring
+(module constructed without temperature monitoring)
