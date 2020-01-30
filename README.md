@@ -27,3 +27,6 @@ and linear stabilizator to 1.8v
 ##### Ni-MH-charger
 Ni-MH charger module based on CN3085 
 (module constructed without temperature monitoring)
+
+##### tl494-pulse-generator
+PWM on TL494 with mosfet
