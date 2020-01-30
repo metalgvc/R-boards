@@ -7,6 +7,9 @@ EAGLE lib contain following devices:
 - MT3608
 - CDRH74NP-220MC-B
 - CN3085
+- 40TPS12
+- MICROSD-MR08
+- SG5841
 
 ##### GP4SF1109F2-smd-to-dip
 SMD to DIP adaptor for GP4SF1109F2 module
