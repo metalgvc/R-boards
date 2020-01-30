@@ -30,3 +30,5 @@ Ni-MH charger module based on CN3085
 
 ##### tl494-pulse-generator
 PWM on TL494 with mosfet
+
+##### RF-detector
