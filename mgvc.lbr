@@ -68,31 +68,31 @@
 <wire x1="-24" y1="-9" x2="-23" y2="-9" width="0.127" layer="21"/>
 <wire x1="-23" y1="-9" x2="-23" y2="-8" width="0.127" layer="21"/>
 <wire x1="-23" y1="-8" x2="-24" y2="-8" width="0.127" layer="21"/>
-<pad name="P$1" x="-6" y="8" drill="0.6" shape="square"/>
-<pad name="P$A" x="-3" y="8" drill="0.6" shape="square"/>
-<pad name="P$F" x="0" y="8" drill="0.6" shape="square"/>
-<pad name="P$2" x="3" y="8" drill="0.6" shape="square"/>
-<pad name="P$3" x="6" y="8" drill="0.6" shape="square"/>
-<pad name="P$B" x="9" y="8" drill="0.6" shape="square"/>
-<pad name="P$E" x="-6" y="-9" drill="0.6" shape="square"/>
-<pad name="P$D" x="-3" y="-9" drill="0.6" shape="square"/>
-<pad name="P$DP" x="0" y="-9" drill="0.6" shape="square"/>
-<pad name="P$C" x="3" y="-9" drill="0.6" shape="square"/>
-<pad name="P$G" x="6" y="-9" drill="0.6" shape="square"/>
-<pad name="P$4" x="9" y="-9" drill="0.6" shape="square"/>
 <text x="-18" y="-3" size="6.4516" layer="21">8. 8. 8. 8.</text>
-<text x="-4" y="5" size="1.4224" layer="21">A</text>
-<text x="8" y="5" size="1.4224" layer="21">B</text>
-<text x="3" y="-8" size="1.4224" layer="21">C</text>
-<text x="-3" y="-8" size="1.4224" layer="21">D</text>
-<text x="-6" y="-8" size="1.4224" layer="21">E</text>
-<text x="-1" y="5" size="1.4224" layer="21">F</text>
-<text x="6" y="-8" size="1.4224" layer="21">G</text>
-<text x="-1" y="-8" size="1.4224" layer="21">DP</text>
+<text x="-5.27" y="5" size="1.4224" layer="21">A</text>
+<text x="6.73" y="5" size="1.4224" layer="21">B</text>
+<text x="1.73" y="-6.73" size="1.4224" layer="21">C</text>
+<text x="-4.27" y="-6.73" size="1.4224" layer="21">D</text>
+<text x="-7.27" y="-6.73" size="1.4224" layer="21">E</text>
+<text x="-2.27" y="5" size="1.4224" layer="21">F</text>
+<text x="3.46" y="-6.73" size="1.4224" layer="21">G</text>
+<text x="-2.27" y="-6.73" size="1.4224" layer="21">DP</text>
 <text x="-7" y="5" size="1.4224" layer="21">1</text>
-<text x="2" y="5" size="1.4224" layer="21">2</text>
-<text x="5" y="5" size="1.4224" layer="21">3</text>
-<text x="9" y="-8" size="1.4224" layer="21">4</text>
+<text x="0.73" y="5" size="1.4224" layer="21">2</text>
+<text x="3.73" y="5" size="1.4224" layer="21">3</text>
+<text x="6.46" y="-6.73" size="1.4224" layer="21">4</text>
+<pad name="112" x="-6.35" y="7.62" drill="0.5" diameter="1.27" shape="octagon"/>
+<pad name="A11" x="-3.81" y="7.62" drill="0.5" diameter="1.27" shape="octagon"/>
+<pad name="F10" x="-1.27" y="7.62" drill="0.5" diameter="1.27" shape="octagon"/>
+<pad name="29" x="1.27" y="7.62" drill="0.5" diameter="1.27" shape="octagon"/>
+<pad name="38" x="3.81" y="7.62" drill="0.5" diameter="1.27" shape="octagon"/>
+<pad name="B7" x="6.35" y="7.62" drill="0.5" diameter="1.27" shape="octagon"/>
+<pad name="E1" x="-6.35" y="-7.62" drill="0.5" diameter="1.27" shape="octagon"/>
+<pad name="D2" x="-3.81" y="-7.62" drill="0.5" diameter="1.27" shape="octagon"/>
+<pad name="DP3" x="-1.27" y="-7.62" drill="0.5" diameter="1.27" shape="octagon"/>
+<pad name="C4" x="1.27" y="-7.62" drill="0.5" diameter="1.27" shape="octagon"/>
+<pad name="G5" x="3.81" y="-7.62" drill="0.5" diameter="1.27" shape="octagon"/>
+<pad name="46" x="6.35" y="-7.62" drill="0.5" diameter="1.27" shape="octagon"/>
 </package>
 <package name="GP4SF1109F2">
 <description>GPS module GP4SF1109F2</description>
@@ -195,6 +195,17 @@
 <wire x1="13.2" y1="2.6" x2="13.2" y2="-2.6" width="0.127" layer="21"/>
 <wire x1="13.2" y1="-2.6" x2="-2.2" y2="-2.6" width="0.127" layer="21"/>
 <wire x1="-2.2" y1="-2.6" x2="-2.2" y2="2.6" width="0.127" layer="21"/>
+</package>
+<package name="AA-BAT-SOCKET">
+<description>AA bat socket</description>
+<pad name="P$-" x="6.35" y="-1.27" drill="0.6" diameter="2.1844" shape="octagon"/>
+<pad name="P$+" x="-5.08" y="59.69" drill="0.6" diameter="2.1844" shape="octagon"/>
+<text x="-2.54" y="52.07" size="6.4516" layer="21">+</text>
+<text x="-1.27" y="0" size="10" layer="21">-</text>
+<wire x1="-7.62" y1="58.42" x2="-7.62" y2="0" width="1.016" layer="21"/>
+<wire x1="-7.62" y1="0" x2="8.89" y2="0" width="1.016" layer="21"/>
+<wire x1="8.89" y1="0" x2="8.89" y2="58.42" width="1.016" layer="21"/>
+<wire x1="8.89" y1="58.42" x2="-7.62" y2="58.42" width="1.016" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -307,6 +318,12 @@
 <pin name="K" x="7.62" y="0" length="middle" rot="R180"/>
 <pin name="G" x="5.08" y="-7.62" length="middle" rot="R90"/>
 </symbol>
+<symbol name="AA-BAT-SOCKET">
+<rectangle x1="-25" y1="16" x2="-17" y2="17" layer="94"/>
+<rectangle x1="-23" y1="14" x2="-19" y2="15" layer="94"/>
+<pin name="P$GND" x="-21" y="9" length="middle" rot="R90"/>
+<pin name="P$VCC" x="-21" y="21" length="middle" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="KL-5641-ASR">
@@ -317,18 +334,18 @@
 <devices>
 <device name="" package="KL-5641-ASR">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-<connect gate="G$1" pin="A" pad="P$A"/>
-<connect gate="G$1" pin="B" pad="P$B"/>
-<connect gate="G$1" pin="C" pad="P$C"/>
-<connect gate="G$1" pin="D" pad="P$D"/>
-<connect gate="G$1" pin="DP" pad="P$DP"/>
-<connect gate="G$1" pin="E" pad="P$E"/>
-<connect gate="G$1" pin="F" pad="P$F"/>
-<connect gate="G$1" pin="G" pad="P$G"/>
+<connect gate="G$1" pin="1" pad="112"/>
+<connect gate="G$1" pin="2" pad="29"/>
+<connect gate="G$1" pin="3" pad="38"/>
+<connect gate="G$1" pin="4" pad="46"/>
+<connect gate="G$1" pin="A" pad="A11"/>
+<connect gate="G$1" pin="B" pad="B7"/>
+<connect gate="G$1" pin="C" pad="C4"/>
+<connect gate="G$1" pin="D" pad="D2"/>
+<connect gate="G$1" pin="DP" pad="DP3"/>
+<connect gate="G$1" pin="E" pad="E1"/>
+<connect gate="G$1" pin="F" pad="F10"/>
+<connect gate="G$1" pin="G" pad="G5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -480,6 +497,22 @@
 <connect gate="G$1" pin="A" pad="P$2"/>
 <connect gate="G$1" pin="G" pad="P$3"/>
 <connect gate="G$1" pin="K" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AA-BAT-SOCKET">
+<gates>
+<gate name="G$1" symbol="AA-BAT-SOCKET" x="22.86" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="AA-BAT-SOCKET">
+<connects>
+<connect gate="G$1" pin="P$GND" pad="P$-"/>
+<connect gate="G$1" pin="P$VCC" pad="P$+"/>
 </connects>
 <technologies>
 <technology name=""/>
