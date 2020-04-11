@@ -207,6 +207,32 @@
 <wire x1="8.89" y1="0" x2="8.89" y2="58.42" width="1.016" layer="21"/>
 <wire x1="8.89" y1="58.42" x2="-7.62" y2="58.42" width="1.016" layer="21"/>
 </package>
+<package name="BTN-6X6">
+<wire x1="0" y1="0" x2="0" y2="6" width="0.127" layer="21"/>
+<wire x1="0" y1="6" x2="6" y2="6" width="0.127" layer="21"/>
+<wire x1="6" y1="6" x2="6" y2="0" width="0.127" layer="21"/>
+<wire x1="6" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="3" drill="0.6" diameter="1.9304" shape="octagon"/>
+<pad name="P$2" x="6" y="3" drill="0.6" diameter="1.9304" shape="octagon"/>
+<circle x="3" y="3" radius="1" width="0.127" layer="21"/>
+</package>
+<package name="TRANS">
+<circle x="0" y="0" radius="6.83915625" width="0.127" layer="21"/>
+<pad name="P$1" x="-6.35" y="3.81" drill="0.6" diameter="1.9304" shape="octagon"/>
+<pad name="P$2" x="-6.35" y="0" drill="0.6" diameter="1.9304" shape="octagon"/>
+<pad name="P$3" x="-6.35" y="-3.81" drill="0.6" diameter="1.9304" shape="octagon"/>
+</package>
+<package name="RAD15X11">
+<wire x1="0" y1="7.5" x2="11" y2="7.5" width="0.127" layer="21"/>
+<wire x1="11" y1="7.5" x2="11" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="11" y1="-7.5" x2="0" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-7.5" x2="0" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-6.5" x2="5" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="5" y1="-6.5" x2="5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="5" y1="6.5" x2="0" y2="6.5" width="0.127" layer="21"/>
+<wire x1="0" y1="6.5" x2="0" y2="7.5" width="0.127" layer="21"/>
+<pad name="P$1" x="8" y="0" drill="1" diameter="3"/>
+</package>
 </packages>
 <symbols>
 <symbol name="KL-5641-ASR">
@@ -323,6 +349,45 @@
 <rectangle x1="-5.08" y1="5.08" x2="7.62" y2="6.35" layer="94"/>
 <pin name="-" x="1.27" y="-1.27" length="middle" rot="R90"/>
 <pin name="+" x="1.27" y="10.16" length="middle" rot="R270"/>
+</symbol>
+<symbol name="BTN-6X6">
+<wire x1="-15.24" y1="2.54" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<pin name="P$1" x="-20.32" y="2.54" length="middle"/>
+<pin name="P$2" x="-7.62" y="2.54" length="middle" rot="R180"/>
+</symbol>
+<symbol name="TRANS-3">
+<wire x1="0" y1="15.24" x2="0" y2="12.7" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="12.7" x2="0" y2="10.16" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="10.16" x2="0" y2="7.62" width="0.254" layer="94" curve="-180"/>
+<pin name="P$1" x="-5.08" y="15.24" length="middle"/>
+<pin name="P$2" x="-5.08" y="10.16" length="middle"/>
+<pin name="P$3" x="-5.08" y="5.08" length="middle"/>
+<wire x1="0" y1="7.62" x2="0" y2="5.08" width="0.254" layer="94" curve="-180"/>
+</symbol>
+<symbol name="RAD15X11">
+<wire x1="0" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="2.54" length="middle"/>
+<wire x1="0" y1="10.16" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="10.16" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -513,6 +578,55 @@
 <connects>
 <connect gate="G$1" pin="+" pad="P$+"/>
 <connect gate="G$1" pin="-" pad="P$-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BTN-6X6">
+<gates>
+<gate name="G$1" symbol="BTN-6X6" x="15.24" y="0"/>
+</gates>
+<devices>
+<device name="" package="BTN-6X6">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRANS">
+<gates>
+<gate name="G$1" symbol="TRANS-3" x="5.08" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="TRANS">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADIATOR">
+<description>radiator 15x11</description>
+<gates>
+<gate name="G$1" symbol="RAD15X11" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="RAD15X11">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
