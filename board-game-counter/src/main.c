@@ -28,7 +28,7 @@ ISR(ADC_vect) {
    if ((ADCH>>ADC_ACCURACY) != (ADCResult>>ADC_ACCURACY)) {
       ADCResult = ADCH;
 
-      if (ADCResult > 0x0f) {
+      if (ADCResult > 20) {
       	btnsState = BTNS_IS_PRESSED;
       } else {
       	btnsState = BTNS_IS_RELEASED;
@@ -110,8 +110,8 @@ int main(void) {
 	while (1) {
 		
 		// debounce delay
-		if (prevBtnState != btnsState) {
-			_delay_ms(3);
+		if (prevBtnState != btnsState && btnsState == BTNS_IS_PRESSED) {
+			_delay_ms(10); // x8
 		}
 		
 		if (prevBtnState != btnsState) {
